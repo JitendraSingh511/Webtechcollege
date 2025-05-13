@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <script>
+        //var a = parseInt(document.getElementById("first_num").value);
+        //var b = parseInt(document.getElementById("second_num").value);
+
+        function add(){
+            var a = parseInt(document.getElementById("first_num").value);
+            var b = parseInt(document.getElementById("second_num").value);
+            var c = a+b;
+            document.getElementById("res").innerHTML = c;
+        }
+        function sub(){
+            var p = parseInt(document.getElementById("first_num").value);
+            var q = parseInt(document.getElementById("second_num").value);
+            var r = p-q;
+            document.getElementById("res").innerHTML = r;
+        }
+        function mul(){
+            var m = parseInt(document.getElementById("first_num").value);
+            var n = parseInt(document.getElementById("second_num").value);
+            var o = m*n;
+            document.getElementById("res").innerHTML = o;
+
+        }
+        function divide(){
+            var A = parseInt(document.getElementById("first_num").value);
+            var B = parseInt(document.getElementById("second_num").value);
+            var C = A/B;
+            document.getElementById("res").innerHTML = C;
+
+        }
+    </script>
+</head>
+<body>
+    Enter first number:<input type="text" size="20" id="first_num">
+    <br/>
+    <br/>
+    Enter second number:<input type="text" size="20" id="second_num">
+    <br/>
+    <br/>
+    Result:<p id="res"></p>
+
+    <button type = "button" onclick="add()">+</button>
+    <button type = "button" onclick="sub()">-</button>
+    <button type = "button" onclick="mul()">*</button>
+    <button type = "button" onclick="divide()">/</button>
+</body>
+</html>
